@@ -1,7 +1,7 @@
 const experience = () => {
   return (
-    <section className="min-h-screen flex items-center py-12" id="experience">
-      <div className="container mx-auto  max-w-3xl">
+    <section className="min-h-screen flex items-center" id="experience">
+      <div className="container mx-auto  max-w-4xl">
         <h2 className="text-xl font-medium text-green-400 mb-8">
           02. <span className="text-white">Mi experiencia laboral</span>
         </h2>

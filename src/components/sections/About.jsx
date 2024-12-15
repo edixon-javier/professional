@@ -2,8 +2,8 @@ import meImage from "../../assets/photo.png";
 
 const About = () => {
   return (
-    <section className="min-h-screen flex items-center py-12" id="about">
-      <div className="container   max-w-3xl mx-auto flex flex-col md:flex-row items-center md:items-start">
+    <section className="min-h-screen flex items-center" id="about">
+      <div className="container   max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start">
         <div className="md:w-3/5">
           <h2 className="text-xl font-medium text-green-400 mb-2">
             01. <span className="text-white">Acerca de mí</span>

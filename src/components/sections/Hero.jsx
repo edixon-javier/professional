@@ -1,12 +1,12 @@
 const Hero = () => (
-  <section id="hero" className="min-h-screen flex items-center justify-center bg-[#0A192F] text-gray-300">
-    <div className="text-left max-w-3xl">
+  <section id="hero" className="min-h-screen flex items-center justify-center  text-gray-300">
+    <div className="text-left max-w-4xl">
       <p className="text-green-400 mb-2">Hola, mi nombre es</p>
-      <h1 className="text-5xl sm:text-6xl font-bold text-gray-100">
+      <h1 className="text-7xl sm:text-7xl font-bold text-gray-100">
         Edixon Pabon
       </h1>
-      <h2 className="text-4xl sm:text-5xl font-bold text-gray-400 mt-2">
-        Construyo cosas para la web.
+      <h2 className="text-4xl sm:text-6xl font-bold text-gray-400 mt-2">
+        Tranformo ideas en experiencias
       </h2>
       <p className="mt-4 text-lg sm:text-base text-gray-400 leading-relaxed">
         Soy ingeniero de sistemas especializado en desarrollo front-end y la

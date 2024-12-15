@@ -3,8 +3,8 @@ import meImage2 from "../../assets/05.jpg";
 
 const Projects = () => {
   return (
-    <section className="min-h-screen flex items-center py-12" id="projects">
-      <div className="container mx-auto  max-w-3xl">
+    <section className="min-h-screen flex items-center" id="projects">
+      <div className="container mx-auto  max-w-4xl">
         <h2 className="text-xl font-medium text-green-400 mb-6">
           03.{" "}
           <span className="text-white">Algunas cosas que he construido</span>

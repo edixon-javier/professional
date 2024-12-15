@@ -9,7 +9,7 @@ import Experience from "./components/sections/experience";
 function App() {
   
   return (
-    <div className="bg-white dark:bg-[#0A192F] text-gray-900 dark:text-gray-100 min-h-screen">
+    <div className="bg-white dark:bg-[#0A192F]  text-gray-900 dark:text-gray-100 min-h-screen">
       <Navbar />
       <main>
         <Hero />
