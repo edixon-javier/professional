@@ -55,7 +55,7 @@ const ContactForm = () => {
   return (
     <section id="contact" className="min-h-screen flex items-center justify-center">
       
-      <div className="max-w-lg w-full bg-white shadow-lg rounded-lg p-6">
+      <div className="max-w-lg w-full bg-gray-50 shadow-xl dark:shadow-gray-500 rounded-lg p-6">
         <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">Contacto</h2>
         <p className="text-center text-gray-600 mb-6">¡Contáctame para colaborar en tu próximo proyecto!</p>
         <form onSubmit={handleSubmit} className="space-y-4">
