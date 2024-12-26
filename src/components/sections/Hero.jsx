@@ -1,3 +1,4 @@
+import Cv from "../../downloads/Edixon_Pabon_Cv.pdf"
 const Hero = () => (
   <section
     id="hero"
@@ -26,10 +27,10 @@ const Hero = () => (
 
       <div className="mt-14">
         <a
-          href="#"
+          href={Cv}
           className="text-green-600 dark:text-green-400 border border-green-600 dark:border-green-400 rounded py-3 px-6 hover:bg-green-600 hover:text-white dark:hover:bg-green-400 dark:hover:text-gray-900 transition duration-300"
         >
-          ¡Contáctame!
+          ¡Echa un Vistazo a Mi CV!
         </a>
       </div>
     </div>
