@@ -55,7 +55,7 @@ const SocialIcons = () => {
         </a>
 
         <a
-          href=""
+          href="www.linkedin.com/in/edixon-pabon"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-green-500"
