@@ -5,7 +5,7 @@ import Contact from "./components/sections/Contact";
 import Hero from "./components/sections/Hero";
 import Projects from "./components/sections/Projects";
 import SocialIcons from "./components/sections/SocialIcons";
-import Experience from "./components/sections/experience";
+import Experience from "./components/sections/Experience";
 import "./i18n";
 
 function App() {
