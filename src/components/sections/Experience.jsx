@@ -11,7 +11,14 @@ const Experience = () => {
           <div className="ml-6 mb-12">
             <div className="absolute -left-3.5 mt-1 w-6 h-6 bg-green-400 rounded-full border-4 border-gray-900"></div>
             <h3 className="text-gray-800 dark:text-gray-50 font-semibold text-lg mb-1">
-              Web Frontend Developer Freelancer
+              Web Frontend Developer |{" "}
+              <a
+                className="text-amber-400 hover:text-amber-300 transition duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Freelancer
+              </a> 
             </h3>
             <p className="text-gray-400 text-sm mb-4">
               1 Marzo 2023 - 1 Abril 2024

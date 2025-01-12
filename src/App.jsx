@@ -6,6 +6,7 @@ import Hero from "./components/sections/Hero";
 import Projects from "./components/sections/Projects";
 import SocialIcons from "./components/sections/SocialIcons";
 import Experience from "./components/sections/experience";
+import "./i18n";
 
 function App() {
   

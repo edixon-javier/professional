@@ -1,9 +1,19 @@
 import { useState, useEffect } from "react";
 import MoonIcon from "../../assets/icons/MomIcon";
 import SunIcon from "../../assets/icons/SunIcon";
+import { useTranslation } from "react-i18next";
+
+const sections = [
+  { id: "hero", label: "Inicio" },
+  { id: "about", label: "Sobre mí" },
+  { id: "experience", label: "Experiencia" },
+  { id: "projects", label: "Proyectos" },
+  { id: "contact", label: "Contacto" },
+];
 
 const Navbar = () => {
   const [theme, setTheme] = useState(false);
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     if (theme === false) {
@@ -24,13 +34,9 @@ const Navbar = () => {
     }
   };
 
-  const sections = [
-    { id: "hero", label: "Inicio" },
-    { id: "about", label: "Sobre mí" },
-    { id: "experience", label: "Experience" },
-    { id: "projects", label: "Proyectos" },
-    { id: "contact", label: "Contacto" },
-  ];
+  const handleLanguage = (e) => {
+    i18n.changeLanguage(e);
+  };
 
   return (
     <nav className="fixed w-full items-center justify-center z-50 pt-6 px-20">
@@ -50,6 +56,23 @@ const Navbar = () => {
               {section.label}
             </button>
           ))}
+          <select
+            onChange={(e) => handleLanguage(e.target.value)}
+            className="text-sm font-medium font-sans bg-transparent border border-gray-300 dark:border-gray-700 rounded-md px-0 pr-1 py-0.5 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 dark:focus:ring-gray-600 transition duration-200"
+          >
+            <option
+              value="es"
+              className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 flex items-center"
+            >
+              Es
+            </option>
+            <option
+              value="en"
+              className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 flex items-center"
+            >
+              Us
+            </option>
+          </select>
           <button aria-label="theme toggler" onClick={changeTheme}>
             {theme ? <MoonIcon /> : <SunIcon />}
           </button>
