@@ -5,7 +5,9 @@ const Experience = () => {
       id="experience"
     >
       <div className="container mx-auto max-w-6xl text-gray-800 dark:text-gray-50">
-        <h2 className="text-2xl text-start sm:text-3xl font-semibold text-gray-800 dark:text-gray-100 mb-4">Mi experiencia laboral</h2>
+        <h2 className="text-2xl text-start sm:text-3xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
+          Mi experiencia laboral
+        </h2>
 
         <div className="relative border-l-2 border-green-400 ml-4">
           <div className="ml-6 mb-12">
@@ -18,7 +20,7 @@ const Experience = () => {
                 rel="noopener noreferrer"
               >
                 Freelancer
-              </a> 
+              </a>
             </h3>
             <p className="text-gray-400 text-sm mb-4">
               1 Marzo 2023 - 1 Abril 2024

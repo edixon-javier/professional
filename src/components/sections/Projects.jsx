@@ -65,7 +65,7 @@ const Projects = () => {
         <div className="flex flex-col md:flex-row-reverse items-center">
           <div className="md:w-1/2 mb-4 md:mb-0 relative group">
             <a
-              href="https://github.com/edixon-javier/Technical"
+              href="https://github.com/edixon-javier/technicalTest"
               target="_blank"
               rel="noopener noreferrer"
               className="block relative overflow-hidden rounded-lg"

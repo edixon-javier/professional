@@ -1,15 +1,15 @@
-import Footer from "./components/layout/Footer";
-import Navbar from "./components/layout/Navbar";
-import About from "./components/sections/About";
-import Contact from "./components/sections/Contact";
-import Hero from "./components/sections/Hero";
-import Projects from "./components/sections/Projects";
-import SocialIcons from "./components/sections/SocialIcons";
-import Experience from "./components/sections/Experience";
+import { Footer, Navbar } from "./components/layout";
+import {
+  About,
+  Contact,
+  Experience,
+  Hero,
+  Projects,
+  SocialIcons,
+} from "./components/sections";
 import "./i18n";
 
 function App() {
-  
   return (
     <div className="bg-gray-50 dark:bg-[#0A192F]  text-gray-900 dark:text-gray-100 min-h-screen">
       <Navbar />
@@ -18,10 +18,10 @@ function App() {
         <About />
         <Experience />
         <Projects />
-        <Contact/>
+        <Contact />
       </main>
-      <Footer/>
-      <SocialIcons/>
+      <Footer />
+      <SocialIcons />
     </div>
   );
 }

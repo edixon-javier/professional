@@ -38,7 +38,7 @@ const SocialIcons = () => {
       </div>
 
       <div className="fixed right-24 bottom-0 flex flex-col items-center space-y-4 z-50">
-      <a
+        <a
           href="https://github.com/edixon-javier"
           target="_blank"
           rel="noopener noreferrer"

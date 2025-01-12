@@ -1,4 +1,3 @@
-
 const About = () => {
   return (
     <section
@@ -19,7 +18,7 @@ const About = () => {
           , liderando la creación de componentes reutilizables, interfaces
           accesibles y soluciones que optimizan la experiencia del usuario.
         </p>
-   
+
         <p className="text-gray-700 dark:text-gray-400 leading-relaxed mb-4">
           Mi experiencia en metodologías{" "}
           <span className="text-green-600 dark:text-green-400 font-medium">
@@ -38,10 +37,6 @@ const About = () => {
           técnicas avanzadas con valores como la responsabilidad, la dedicación
           y el aprendizaje continuo puede marcar la diferencia en el desarrollo
           de soluciones innovadoras y sostenibles para su empresa.
-        </p>
-        <p className="text-gray-700 dark:text-gray-400 leading-relaxed">
-          Algunas de las tecnologías con las que he trabajado recientemente
-          incluyen:
         </p>
       </div>
     </section>

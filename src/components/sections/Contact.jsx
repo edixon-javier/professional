@@ -1,5 +1,5 @@
-import  { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useState } from "react";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -36,31 +36,43 @@ const ContactForm = () => {
     if (validateForm()) {
       emailjs
         .send(
-          "service_khmy9lm", 
-          "template_dzbrt36", 
+          "service_khmy9lm",
+          "template_dzbrt36",
           formData,
-          "2xzsH_hd3jjcD4nx4" 
+          "2xzsH_hd3jjcD4nx4"
         )
         .then(
           () => {
             setFormData({ email: "", message: "" });
           },
           (error) => {
-            alert("Hubo un error al enviar el mensaje. Intenta de nuevo.", error);
+            alert(
+              "Hubo un error al enviar el mensaje. Intenta de nuevo.",
+              error
+            );
           }
         );
     }
   };
 
   return (
-    <section id="contact" className="min-h-screen flex items-center justify-center">
-      
+    <section
+      id="contact"
+      className="min-h-screen flex items-center justify-center"
+    >
       <div className="max-w-lg w-full bg-gray-50 shadow-xl dark:shadow-gray-500 rounded-lg p-6">
-        <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">Contacto</h2>
-        <p className="text-center text-gray-600 mb-6">¡Contáctame para colaborar en tu próximo proyecto!</p>
+        <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">
+          Contacto
+        </h2>
+        <p className="text-center text-gray-600 mb-6">
+          ¡Contáctame para colaborar en tu próximo proyecto!
+        </p>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700"
+            >
               Correo electrónico
             </label>
             <input
@@ -74,10 +86,15 @@ const ContactForm = () => {
               }`}
               placeholder="Tu correo electrónico"
             />
-            {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+            {errors.email && (
+              <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+            )}
           </div>
           <div>
-            <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+            <label
+              htmlFor="message"
+              className="block text-sm font-medium text-gray-700"
+            >
               Mensaje
             </label>
             <textarea
@@ -91,7 +108,9 @@ const ContactForm = () => {
               rows="5"
               placeholder="Escribe tu mensaje aquí"
             ></textarea>
-            {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
+            {errors.message && (
+              <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+            )}
           </div>
           <button
             type="submit"
