@@ -1,5 +1,78 @@
 {
-  "My_name_is": "My name is",
+  "navbar": {
+    "home": "Home",
+    "about": "About Me",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "language": {
+      "es": "Spanish",
+      "en": "English"
+    }
+  },
+  "hero": {
+    "greeting": "Hello, my name is",
+    "name": "Edixon Pabon,",
+    "tagline": "I turn ideas into experiences.",
+    "description": "I am a systems engineer specializing in front-end development and creating user-centered digital experiences. I combine my creativity and technical skills to build innovative and accessible solutions that optimize team productivity and enhance user experience.",
+    "cta": "Take a Look at My Resume!"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph1": "Hi! I'm Edixon Pabón, a systems engineer committed to excellence and innovation in web application development. Throughout my career, I have worked with technologies like React, Angular, leading the creation of reusable components, accessible interfaces, and solutions that optimize the user experience.",
+    "paragraph2": "My experience with Agile methodologies has allowed me to collaborate in cross-functional environments, improving workflows and ensuring the delivery of high-quality products. Beyond technical aspects, I firmly believe that communication, teamwork, and adaptability are key to overcoming challenges and achieving any company's goals.",
+    "paragraph3": "I am convinced that my ability to combine advanced technical skills with values like responsibility, dedication, and continuous learning can make a difference in developing innovative and sustainable solutions for your company."
+  },
+  "experience": {
+    "title": "My Work Experience",
+    "freelancer": {
+      "role": "Web Frontend Developer",
+      "company": "Freelancer",
+      "date": "March 1, 2023 - April 1, 2024",
+      "description": "I developed and maintained web applications, focusing on creating reusable component libraries that enhanced code scalability and maintainability. I implemented optimized landing pages with responsive design, improving user experience and site performance. Collaborated with cross-functional teams under Agile methodology, ensuring iterative deliveries and adapting to changes in client requirements. My work included integrating best development practices, such as code modularization and continuous reviews, to ensure high-quality, functional, and client-aligned products."
+    },
+    "freelancerTags": [
+      "React",
+      "Angular",
+      "Storybook",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "asisvisa": {
+      "role": "Web Frontend Developer",
+      "company": "AsisVisa Immigration",
+      "date": "March 1, 2022 - March 1, 2023",
+      "description": "I actively participated in the design, development, and maintenance of web applications focused on reactive forms and custom components, automating critical processes within the company. I implemented significant performance improvements through optimization and refactoring, contributing to greater efficiency in daily operations. Collaborated in Agile teams using Scrum methodology, fostering constant communication and ensuring short-cycle deliveries with tangible results. Additionally, I worked on implementing tools and practices that enhanced team productivity, reducing development times and optimizing the final product quality."
+    },
+    "asisvisaTags": ["Angular", "RxJS", "Git", "ClickUp", "Slack"]
+  },
+  "projects": {
+    "header": "Some things I've built",
+    "featured": "Featured project",
+    "levelup": {
+      "title": "LevelUp",
+      "description": "I developed an interactive application using React and Tailwind CSS, connected to a video game API to display detailed information about various titles. Although it is not designed to be a store, the application simulates a dynamic video game catalog, allowing users to explore data such as name, image, rating, and descriptions. The interface was designed to be fully responsive and accessible on different devices.",
+      "technologies": "Technologies: React, Tailwind CSS, Video Game API"
+    },
+    "technical": {
+      "title": "Technical",
+      "description": "This was a technical test where I developed an application to consume a user API using React and Tailwind CSS. The application allows operations such as viewing, editing, filtering, and deleting users. Through an intuitive interface, users can efficiently interact with the data list. This project aims to demonstrate skills in API handling and front-end data management.",
+      "technologies": "Technologies: React.js, Tailwind CSS, API"
+    }
+  },
+  "contactForm": {
+    "heading": "Contact",
+    "description": "Contact me to collaborate on your next project!",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Your email address",
+    "emailErrorRequired": "Email is required.",
+    "emailErrorInvalid": "Please enter a valid email.",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Write your message here",
+    "messageErrorRequired": "Message cannot be empty.",
+    "submitButton": "Send Message"
+  },
   "footer": {
     "copyright": "My Portfolio. All rights reserved."
   }

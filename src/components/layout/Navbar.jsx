@@ -11,16 +11,16 @@ import { MomIcon, SunIcon } from "../../assets/icons";
 import { useTranslation } from "react-i18next";
 
 const sections = [
-  { id: "hero", label: "Inicio", icon: <FaHome /> },
-  { id: "about", label: "Sobre mí", icon: <FaUser /> },
-  { id: "experience", label: "Experiencia", icon: <FaLaptopCode /> },
-  { id: "projects", label: "Proyectos", icon: <FaProjectDiagram /> },
-  { id: "contact", label: "Contacto", icon: <FaEnvelope /> },
+  { id: "hero", label: "navbar.home", icon: <FaHome /> },
+  { id: "about", label: "navbar.about", icon: <FaUser /> },
+  { id: "experience", label: "navbar.experience", icon: <FaLaptopCode /> },
+  { id: "projects", label: "navbar.projects", icon: <FaProjectDiagram /> },
+  { id: "contact", label: "navbar.contact", icon: <FaEnvelope /> },
 ];
 
 const Navbar = () => {
   const [theme, setTheme] = useState(false);
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   useEffect(() => {
     if (!theme) {
@@ -58,7 +58,7 @@ const Navbar = () => {
               {section.icon}
             </div>
             <span className="absolute top-12 text-xs text-gray-400 opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-300">
-              {section.label}
+              {t(section.label)}
             </span>
           </div>
         ))}
@@ -72,13 +72,13 @@ const Navbar = () => {
               onClick={() => handleLanguage("es")}
               className="block px-4 py-2 rounded-lg hover:bg-green-300 transition-all duration-200"
             >
-              Español
+              {t("navbar.language.es")}
             </button>
             <button
               onClick={() => handleLanguage("en")}
               className="block px-4 py-2 rounded-lg hover:bg-green-300 transition-all duration-200"
             >
-              English
+              {t("navbar.language.en")}
             </button>
           </div>
         </div>

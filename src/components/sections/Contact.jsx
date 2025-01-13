@@ -1,7 +1,9 @@
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     email: "",
     message: "",
@@ -17,13 +19,13 @@ const ContactForm = () => {
   const validateForm = () => {
     let formErrors = {};
     if (!formData.email) {
-      formErrors.email = "El correo electrónico es obligatorio.";
+      formErrors.email = t("contactForm.emailErrorRequired");
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      formErrors.email = "Por favor, introduce un correo válido.";
+      formErrors.email = t("contactForm.emailErrorInvalid");
     }
 
     if (!formData.message.trim()) {
-      formErrors.message = "El mensaje no puede estar vacío.";
+      formErrors.message = t("contactForm.messageErrorRequired");
     }
 
     setErrors(formErrors);
@@ -46,10 +48,7 @@ const ContactForm = () => {
             setFormData({ email: "", message: "" });
           },
           (error) => {
-            alert(
-              "Hubo un error al enviar el mensaje. Intenta de nuevo.",
-              error
-            );
+            alert(t("contactForm.errorSending"), error);
           }
         );
     }
@@ -62,10 +61,10 @@ const ContactForm = () => {
     >
       <div className="max-w-lg w-full bg-gray-50 shadow-xl dark:shadow-gray-500 rounded-lg p-6">
         <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">
-          Contacto
+          {t("contactForm.heading")}
         </h2>
         <p className="text-center text-gray-600 mb-6">
-          ¡Contáctame para colaborar en tu próximo proyecto!
+          {t("contactForm.description")}
         </p>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
@@ -73,7 +72,7 @@ const ContactForm = () => {
               htmlFor="email"
               className="block text-sm font-medium text-gray-700"
             >
-              Correo electrónico
+              {t("contactForm.emailLabel")}
             </label>
             <input
               type="email"
@@ -84,7 +83,7 @@ const ContactForm = () => {
               className={`mt-1 block w-full px-4 py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 text-gray-700 ${
                 errors.email ? "border-red-500" : "border-gray-300"
               }`}
-              placeholder="Tu correo electrónico"
+              placeholder={t("contactForm.emailPlaceholder")}
             />
             {errors.email && (
               <p className="text-red-500 text-sm mt-1">{errors.email}</p>
@@ -95,7 +94,7 @@ const ContactForm = () => {
               htmlFor="message"
               className="block text-sm font-medium text-gray-700"
             >
-              Mensaje
+              {t("contactForm.messageLabel")}
             </label>
             <textarea
               id="message"
@@ -106,7 +105,7 @@ const ContactForm = () => {
                 errors.message ? "border-red-500" : "border-gray-300"
               }`}
               rows="5"
-              placeholder="Escribe tu mensaje aquí"
+              placeholder={t("contactForm.messagePlaceholder")}
             ></textarea>
             {errors.message && (
               <p className="text-red-500 text-sm mt-1">{errors.message}</p>
@@ -116,7 +115,7 @@ const ContactForm = () => {
             type="submit"
             className="w-full bg-blue-600 text-white font-bold py-2 rounded-md hover:bg-blue-700 transition"
           >
-            Enviar Mensaje
+            {t("contactForm.submitButton")}
           </button>
         </form>
       </div>

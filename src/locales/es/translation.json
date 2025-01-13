@@ -1,5 +1,78 @@
 {
-  "My_name_is": "Mi nombre es",
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "language": {
+      "es": "Español",
+      "en": "Inglés"
+    }
+  },
+  "hero": {
+    "greeting": "Hola, mi nombre es",
+    "name": "Edixon Pabon,",
+    "tagline": "Transformo ideas en experiencias.",
+    "description": "Soy ingeniero de sistemas especializado en desarrollo front-end y la creación de experiencias digitales centradas en el usuario. Combino mi creatividad y habilidades técnicas para construir soluciones innovadoras y accesibles que optimizan la productividad del equipo y mejoran la experiencia del usuario.",
+    "cta": "¡Echa un Vistazo a Mi CV!"
+  },
+  "about": {
+    "title": "Acerca de mí",
+    "paragraph1": "¡Hola! Soy Edixon Pabón, un ingeniero de sistemas comprometido con la excelencia y la innovación en el desarrollo de aplicaciones web. A lo largo de mi trayectoria, he trabajado con tecnologías como React, Angular, liderando la creación de componentes reutilizables, interfaces accesibles y soluciones que optimizan la experiencia del usuario.",
+    "paragraph2": "Mi experiencia en metodologías Agile me ha permitido colaborar en entornos multifuncionales, mejorando flujos de trabajo y asegurando la entrega de productos de alta calidad. Más allá de los aspectos técnicos, creo firmemente que la comunicación, el trabajo en equipo y la adaptabilidad son fundamentales para superar los desafíos y lograr los objetivos de cualquier empresa.",
+    "paragraph3": "Estoy convencido de que mi capacidad para combinar habilidades técnicas avanzadas con valores como la responsabilidad, la dedicación y el aprendizaje continuo puede marcar la diferencia en el desarrollo de soluciones innovadoras y sostenibles para su empresa."
+  },
+  "experience": {
+    "title": "Mi experiencia laboral",
+    "freelancer": {
+      "role": "Web Frontend Developer",
+      "company": "Freelancer",
+      "date": "1 Marzo 2023 - 1 Abril 2024",
+      "description": "Desarrollé y mantuve aplicaciones web, enfocándome en la creación de bibliotecas de componentes reutilizables que facilitaron la escalabilidad y mantenibilidad del código. Implementé landing pages optimizadas con un diseño responsivo que mejoraron la experiencia de usuario y el rendimiento del sitio. Trabajé en colaboración con equipos multifuncionales bajo la metodología Agile, asegurando entregas iterativas y adaptándome a los cambios de requerimientos del cliente. Mi labor incluyó la integración de buenas prácticas de desarrollo, como la modularización del código y revisiones continuas, para garantizar productos de alta calidad, funcionales y alineados con las expectativas del cliente."
+    },
+    "freelancerTags": [
+      "React",
+      "Angular",
+      "Storybook",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "asisvisa": {
+      "role": "Web Frontend Developer",
+      "company": "AsisVisa Inmigración",
+      "date": "1 Marzo 2022 - 1 Marzo 2023",
+      "description": "Participé activamente en el diseño, desarrollo y mantenimiento de aplicaciones web enfocadas en formularios reactivos y componentes personalizados, permitiendo automatizar procesos críticos dentro de la empresa. Implementé mejoras significativas en el rendimiento del código mediante optimizaciones y refactorización, lo que contribuyó a una mayor eficiencia en las operaciones diarias. Colaboré en equipos ágiles utilizando la metodología Scrum, facilitando una comunicación constante, asegurando entregas en ciclos cortos con resultados tangibles. Además, trabajé en la implementación de herramientas y prácticas que mejoraron la productividad del equipo, reduciendo los tiempos de desarrollo y optimizando la calidad del producto final."
+    },
+    "asisvisaTags": ["Angular", "RxJS", "Git", "ClickUp", "Slack"]
+  },
+  "projects": {
+    "header": "Algunas cosas que he construido",
+    "featured": "Proyecto destacado",
+    "levelup": {
+      "title": "LevelUp",
+      "description": "Desarrollé una aplicación interactiva utilizando React y Tailwind CSS, conectada a una API de videojuegos para mostrar información detallada sobre diversos títulos. Aunque no está diseñada para ser una tienda, la aplicación simula un catálogo dinámico de videojuegos, permitiendo a los usuarios explorar datos como el nombre, la imagen, la puntuación y las descripciones. La interfaz fue diseñada para ser completamente responsiva y accesible en diferentes dispositivos.",
+      "technologies": "Tecnologías: React, Tailwind CSS, API de Videojuegos"
+    },
+    "technical": {
+      "title": "Technical",
+      "description": "Esta fue una prueba técnica en la que desarrollé una aplicación para consumir una API de usuarios utilizando React y Tailwind CSS. La aplicación permite realizar operaciones como visualizar, editar, filtrar y eliminar usuarios. A través de una interfaz intuitiva los usuarios pueden interactuar con la lista de datos de manera eficiente. Este proyecto tiene como objetivo demostrar habilidades en el manejo de APIs y la gestión de datos en el front-end.",
+      "technologies": "Tecnologías: React.js, Tailwind CSS, API"
+    }
+  },
+  "contactForm": {
+    "heading": "Contacto",
+    "description": "¡Contáctame para colaborar en tu próximo proyecto!",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "Tu correo electrónico",
+    "emailErrorRequired": "El correo electrónico es obligatorio.",
+    "emailErrorInvalid": "Por favor, introduce un correo válido.",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Escribe tu mensaje aquí",
+    "messageErrorRequired": "El mensaje no puede estar vacío.",
+    "submitButton": "Enviar Mensaje"
+  },
   "footer": {
     "copyright": "Mi Portafolio. Todos los derechos reservados."
   }
