@@ -1,7 +1,7 @@
 const SocialIcons = () => {
   return (
     <>
-      <div className="fixed left-24 bottom-0 flex flex-col items-center space-y-4 z-50">
+      <div className="fixed left-24 bottom-0 flex flex-col items-center space-y-4 z-50 opacity-0 sm:opacity-100">
         <a
           href="https://github.com/edixon-javier"
           target="_blank"
@@ -19,7 +19,7 @@ const SocialIcons = () => {
         </a>
 
         <a
-          href="www.linkedin.com/in/edixon-pabon"
+          href="https://www.linkedin.com/in/edixon-pabon"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-green-500"
@@ -37,7 +37,7 @@ const SocialIcons = () => {
         <div className="w-0.5 h-24 bg-gray-600 dark:bg-gray-300"></div>
       </div>
 
-      <div className="fixed right-24 bottom-0 flex flex-col items-center space-y-4 z-50">
+      <div className="fixed right-24 bottom-0 flex flex-col items-center space-y-4 z-50 opacity-0 sm:opacity-100">
         <a
           href="https://github.com/edixon-javier"
           target="_blank"
@@ -55,7 +55,7 @@ const SocialIcons = () => {
         </a>
 
         <a
-          href="www.linkedin.com/in/edixon-pabon"
+          href="https://www.linkedin.com/in/edixon-pabon"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-green-500"

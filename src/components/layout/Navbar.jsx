@@ -1,14 +1,21 @@
 import { useState, useEffect } from "react";
-import MoonIcon from "../../assets/icons/MomIcon";
-import SunIcon from "../../assets/icons/SunIcon";
+import {
+  FaHome,
+  FaUser,
+  FaLaptopCode,
+  FaProjectDiagram,
+  FaEnvelope,
+  FaGlobe,
+} from "react-icons/fa";
+import { MomIcon, SunIcon } from "../../assets/icons";
 import { useTranslation } from "react-i18next";
 
 const sections = [
-  { id: "hero", label: "Inicio" },
-  { id: "about", label: "Sobre mí" },
-  { id: "experience", label: "Experiencia" },
-  { id: "projects", label: "Proyectos" },
-  { id: "contact", label: "Contacto" },
+  { id: "hero", label: "Inicio", icon: <FaHome /> },
+  { id: "about", label: "Sobre mí", icon: <FaUser /> },
+  { id: "experience", label: "Experiencia", icon: <FaLaptopCode /> },
+  { id: "projects", label: "Proyectos", icon: <FaProjectDiagram /> },
+  { id: "contact", label: "Contacto", icon: <FaEnvelope /> },
 ];
 
 const Navbar = () => {
@@ -16,7 +23,7 @@ const Navbar = () => {
   const { i18n } = useTranslation();
 
   useEffect(() => {
-    if (theme === false) {
+    if (!theme) {
       document.querySelector("html").classList.add("dark");
     } else {
       document.querySelector("html").classList.remove("dark");
@@ -24,7 +31,7 @@ const Navbar = () => {
   }, [theme]);
 
   const changeTheme = () => {
-    setTheme((prevTheme) => (prevTheme === true ? false : true));
+    setTheme((prevTheme) => !prevTheme);
   };
 
   const handleScroll = (id) => {
@@ -39,43 +46,47 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full items-center justify-center z-50 pt-6 px-20">
-      <div className="mx-auto flex justify-between items-center">
-        <div className=" hover:shadow-neon transition-transform transform hover:scale-110">
-          <div className="text-3xl cursor-pointer font-bold text-transparent bg-gradient-to-r from-green-300 via-teal-400 to-green-500 bg-clip-text stroke-2 stroke-transparent hover:stroke-neon transition-all">
-            EP
+    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 bg-gray-900 dark:bg-gray-50 dark:bg-opacity-10 bg-opacity-10 shadow-lg rounded-full px-4 py-2 backdrop-blur-0 backdrop-saturate-150">
+      <div className="flex items-center space-x-4">
+        {sections.map((section) => (
+          <div
+            key={section.id}
+            onClick={() => handleScroll(section.id)}
+            className="relative group flex flex-col items-center cursor-pointer"
+          >
+            <div className="p-3 text-gray-100 bg-[#0A192F] rounded-full group-hover:bg-green-400 group-hover:bg-opacity-90 group-hover:text-white transition-all duration-300">
+              {section.icon}
+            </div>
+            <span className="absolute top-12 text-xs text-gray-400 opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-300">
+              {section.label}
+            </span>
+          </div>
+        ))}
+
+        <div className="relative group mx-2">
+          <div className="p-3 text-gray-100 bg-[#0A192F] rounded-full group-hover:bg-green-400 group-hover:text-white transition-all duration-300">
+            <FaGlobe />
+          </div>
+          <div className="absolute top-10 left-5 transform -translate-x-1/2 dark:text-white text-black text-sm shadow-lg rounded-lg opacity-0 group-hover:opacity-90 group-hover:translate-y-2 transition-all duration-300">
+            <button
+              onClick={() => handleLanguage("es")}
+              className="block px-4 py-2 rounded-lg hover:bg-green-300 transition-all duration-200"
+            >
+              Español
+            </button>
+            <button
+              onClick={() => handleLanguage("en")}
+              className="block px-4 py-2 rounded-lg hover:bg-green-300 transition-all duration-200"
+            >
+              English
+            </button>
           </div>
         </div>
-        <div className="flex items-center justify-center space-x-9">
-          {sections.map((section) => (
-            <button
-              onClick={() => handleScroll(section.id)}
-              className="text-base line-clamp-3tracking-wide font-medium  font-sans text-gray-900 dark:text-gray-100 hover:text-[#00FF88] dark:hover:text-[#00FF88]"
-              key={section.id}
-            >
-              {section.label}
-            </button>
-          ))}
-          <select
-            onChange={(e) => handleLanguage(e.target.value)}
-            className="text-sm font-medium font-sans bg-transparent border border-gray-300 dark:border-gray-700 rounded-md px-0 pr-1 py-0.5 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-1 focus:ring-gray-400 dark:focus:ring-gray-600 transition duration-200"
-          >
-            <option
-              value="es"
-              className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 flex items-center"
-            >
-              Es
-            </option>
-            <option
-              value="en"
-              className="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 flex items-center"
-            >
-              Us
-            </option>
-          </select>
-          <button aria-label="theme toggler" onClick={changeTheme}>
-            {theme ? <MoonIcon /> : <SunIcon />}
-          </button>
+        <div
+          className="p-3 text-gray-100 bg-[#0A192F] rounded-full cursor-pointer hover:bg-green-400 group-hover:text-white transition-all duration-300"
+          onClick={changeTheme}
+        >
+          {theme ? <MomIcon /> : <SunIcon />}
         </div>
       </div>
     </nav>

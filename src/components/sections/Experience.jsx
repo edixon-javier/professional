@@ -1,10 +1,10 @@
 const Experience = () => {
   return (
     <section
-      className="min-h-screen flex items-center transition-colors duration-300"
+      className="min-h-screen flex items-center  justify-center transition-colors duration-300 px-4"
       id="experience"
     >
-      <div className="container mx-auto max-w-6xl text-gray-800 dark:text-gray-50">
+      <div className="container  w-full max-w-4xl  text-gray-800 dark:text-gray-50">
         <h2 className="text-2xl text-start sm:text-3xl font-semibold text-gray-800 dark:text-gray-100 mb-4">
           Mi experiencia laboral
         </h2>
@@ -25,7 +25,7 @@ const Experience = () => {
             <p className="text-gray-400 text-sm mb-4">
               1 Marzo 2023 - 1 Abril 2024
             </p>
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed text-sm md:text-base">
               Desarrollé y mantuve aplicaciones web, enfocándome en la creación
               de bibliotecas de componentes reutilizables que facilitaron la
               escalabilidad y mantenibilidad del código. Implementé landing
@@ -76,7 +76,7 @@ const Experience = () => {
             <p className="text-gray-400 text-sm mb-4">
               1 Marzo 2022 - 1 Marzo 2023
             </p>
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed text-sm md:text-base">
               Participé activamente en el diseño, desarrollo y mantenimiento de
               aplicaciones web enfocadas en formularios reactivos y componentes
               personalizados, permitiendo automatizar procesos críticos dentro

@@ -58,7 +58,7 @@ const ContactForm = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center justify-center"
+      className="min-h-screen flex items-center justify-center px-4"
     >
       <div className="max-w-lg w-full bg-gray-50 shadow-xl dark:shadow-gray-500 rounded-lg p-6">
         <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">

@@ -4,10 +4,10 @@ import technical from "../../assets/technical.png";
 const Projects = () => {
   return (
     <section
-      className="min-h-screen flex items-center transition-colors duration-300"
+      className="min-h-screen flex items-center justify-center transition-colors duration-300 px-4"
       id="projects"
     >
-      <div className="container mx-auto max-w-6xl text-gray-800 dark:text-gray-50">
+      <div className="container w-full max-w-4xl text-gray-800 dark:text-gray-50">
         <h2 className="text-2xl text-start sm:text-3xl font-semibold text-gray-800 dark:text-gray-100 mb-6">
           Algunas cosas que he construido
         </h2>
@@ -44,7 +44,7 @@ const Projects = () => {
             <h4 className="text-gray-800 dark:text-gray-50 font-semibold text-lg mb-3">
               LevelUp
             </h4>
-            <p className="text-gray-400 leading-relaxed mb-4">
+            <p className="text-gray-400 leading-relaxed mb-4 text-sm md:text-base">
               Desarrollé una aplicación interactiva utilizando{" "}
               <span className="text-green-400 font-medium">React</span> y{" "}
               <span className="text-green-400 font-medium">Tailwind CSS</span>,
@@ -93,7 +93,7 @@ const Projects = () => {
             <h4 className="text-gray-800 dark:text-gray-50 font-semibold text-lg mb-3">
               Technical
             </h4>
-            <p className="text-gray-400 leading-relaxed mb-4">
+            <p className="text-gray-400 leading-relaxed mb-4 text-sm md:text-base">
               Esta fue una prueba técnica en la que desarrollé una aplicación
               para consumir una API de usuarios utilizando{" "}
               <span className="text-green-400 font-medium">React</span> y{" "}
