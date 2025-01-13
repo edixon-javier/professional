@@ -3,7 +3,7 @@ const MomIcon = () => {
   return (
     <svg
       viewBox="0 0 23 23"
-      className="w-5 h-5 stroke-current dark:hidden  md:h-6 md:w-6"
+      className="w-3 h-3 stroke-current dark:hidden text-white md:h-4 md:w-4"
       fill="none"
     >
       <path
