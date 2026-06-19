@@ -69,18 +69,24 @@ Si deseas clonar y ejecutar este proyecto localmente, sigue estos pasos:
    npm install
    ```
 
-3. **Iniciar el servidor de desarrollo:**
+3. **Configurar variables de entorno:**
+   ```bash
+   cp .env.example .env
+   ```
+   Completa `.env` con tus credenciales de [EmailJS](https://www.emailjs.com/) (service ID, template ID y public key) para que el formulario de contacto funcione.
+
+4. **Iniciar el servidor de desarrollo:**
    ```bash
    npm run dev
    ```
 
-4. Abre tu navegador en `http://localhost:5173` para ver el proyecto.
+5. Abre tu navegador en `http://localhost:5173` para ver el proyecto.
 
 ---
 
 ## 📝 Contribuciones
 
-Aunque este proyecto es un portafolio personal, estoy abierto a sugerencias o mejoras. Si tienes ideas para optimizarlo, no dudes en crear un issue o enviar un pull request.
+Aunque este proyecto es un portafolio personal, estoy abierto a sugerencias o mejoras. Si tienes ideas para optimizarlo, no dudes en crear un issue o enviar un pull request. Consulta [CONTRIBUTING.md](./CONTRIBUTING.md) para más detalles sobre cómo configurar el entorno y las convenciones del proyecto.
 
 ---
 

@@ -38,10 +38,10 @@ const ContactForm = () => {
     if (validateForm()) {
       emailjs
         .send(
-          "service_khmy9lm",
-          "template_dzbrt36",
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
           formData,
-          "2xzsH_hd3jjcD4nx4"
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         )
         .then(
           () => {
